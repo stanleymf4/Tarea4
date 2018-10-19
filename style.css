@@ -1,0 +1,173 @@
+.axis--x path {
+  stroke-width: 1px;
+  stroke: #777;
+}
+
+.tick line {
+  stroke: #777;
+}
+
+.axis--x.years {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.axis--x text {
+  fill: #a5a5a5;
+}
+
+.axis--y path {
+  display: none;
+}
+
+.annotations text {
+  fill: #a5a5a5;
+}
+
+.band text {
+  fill: #a5a5a5;
+}
+
+
+.axis--y text {
+  font-size: 11px;
+  fill: #a5a5a5;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 4.25px;
+}
+
+.axis--x text {
+  font-size: 11px;
+}
+
+body {
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
+  color: #3d3d3d;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus line {
+  fill: none;
+  stroke: steelblue;
+}
+
+.title {
+  margin: auto;
+}
+
+.bands {
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.annotations {
+  font-size: 10px;
+}
+
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 20px 0 0 75px;
+  background-color: #f3f3f3;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.15);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.15);
+  pointer-events: none;
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility .5s, opacity 0.5s linear;
+}
+
+#tooltip.hidden {
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+#tooltip p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#copytext {
+  position: relative;
+  width: 600px;
+  height: auto;
+  padding: 5px;
+  margin: 10px 0 0 10px;
+  z-index: 1000;
+}
+
+#copytext p {
+  margin: 0;
+  color: #a5a5a5;
+  font-size: 12px;
+  line-height: 14px;
+  max-width: 450px;
+}
+
+#date {
+  font-weight: bold;
+}
+
+#box {
+  /*background-color: white;*/
+  text-transform: uppercase;
+  padding: 1px 2px 2px 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 10px;
+  margin-right: 3px;
+}
+
+#boxSpacer {
+  display: inline-block;
+  width: 30px;
+}
+
+.legendTitle {
+  background-color: #70cf57;
+  color: white;
+
+}
+
+.legendRGB {
+  background-color: #482374;
+  color: white;
+
+}
+
+.legendRG {
+  background-color: #277f8e;
+  color: white;
+
+}
+
+.legendNIR {
+  padding-left: 2px;
+  background-color: #efe51c;
+  color: white;
+
+}

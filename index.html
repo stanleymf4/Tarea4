@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+ 
+  </head>
+ 
+   <p>
+	<h1>Armas Utilizadas en el Hurto a Entidades Comerciales</h1>
+   </p>
+   <p>
+		Presenta una linea de tiempo, delimitada por año, con la cantidad de hurtos a entidades comerciales,
+		clasificados por el arma con la que se cometió el ilícito.
+   </p>
+   
+   <p>
+		Información obtenida en el portal de la Policía Nacional de Colombia, url: https://www.policia.gov.co/grupo-informaci%C3%B3n-criminalidad/estadistica-delictiva 
+   </p>
+   
+   <h4>Instrucciones de uso:</h4>
+   
+   <p>
+		1. Esta visualización inicialmente muestra datos del periodo actual, puede seleccionar el un periodo en la lista desplegable para tal fin.
+		<br/>
+		2. Para tener mas detalle de los hurtos, dia por dia, esta visualización provee un mecanismo, que al deslizar el mouse en su contenido se actualizan las cifras correspondientes
+   </p>
+   
+   <br/>
+   
+   <div id="copytext">
+      <label>Año:</label>
+      <select onchange="refreshData(value)">
+	    <option value="2010">2010</option>
+		<option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option selected="selected" value="2018">2018</option>
+     </select>
+    </div>
+      <div>
+        <span id="tooltip" class="hidden">
+                <p><span id="date">Coverage!</span></p>
+                <p><span id="value">100</span></p>
+        </span>
+      </div>
+      <svg id="chart" width="900" height="400"></svg>
+    <script src="script.js">  </script>
+    <script>
+    refreshData("2018")
+    </script>
+  
+  </body>  
+</html>
